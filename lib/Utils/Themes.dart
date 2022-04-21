@@ -13,8 +13,15 @@ dynamic button_gradient = const LinearGradient(
 
 const String MainFontFamily = 'Nunito';
 
-TextStyle MainHeading = const TextStyle(
+TextStyle MainHeading1 = const TextStyle(
   fontFamily: MainFontFamily,
   fontWeight: FontWeight.w900,
   fontSize: 50,
+  color: Color(0xffDD5D00),
+);
+TextStyle MainHeading2 = const TextStyle(
+  fontFamily: MainFontFamily,
+  fontWeight: FontWeight.w900,
+  fontSize: 50,
+  color: Color(0xffFD9601),
 );

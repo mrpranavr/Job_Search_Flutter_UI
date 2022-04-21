@@ -1,8 +1,10 @@
 import "package:flutter/material.dart";
+import 'package:job/Screens/Registration_screen.dart';
 import 'package:job/Utils/Themes.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
+  static const routeName = '/Login';
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +20,18 @@ class LoginScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                'JobSearch',
-                style: MainHeading,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Job',
+                    style: MainHeading1,
+                  ),
+                  Text(
+                    'Search',
+                    style: MainHeading2,
+                  ),
+                ],
               ),
               const SizedBox(
                 height: 62,
@@ -128,7 +139,8 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                     onTap: () {
-                      // Navigator.of(context).pushNamed('/signUp');
+                      Navigator.of(context)
+                          .pushNamed(RegistrationScreen.routeName);
                       print('hello');
                     },
                   )
