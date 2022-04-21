@@ -1,6 +1,6 @@
 # job
 
-A new Flutter project.
+UI for a Job searching application using flutter
 
 ## Getting Started
 
