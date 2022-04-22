@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job/Screens/Job_list_screen.dart';
 import 'package:job/Screens/Login_screen.dart';
 import 'package:job/Screens/Registration_screen.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const LoginScreen(),
+        home: const JobList(),
         routes: {
           RegistrationScreen.routeName: (context) => RegistrationScreen(),
         });
